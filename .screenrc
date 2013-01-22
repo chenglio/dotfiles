@@ -1,0 +1,36 @@
+## clio's .screenrc
+
+# Don't display the copyright page
+startup_message off
+
+# tab-completion flash in heading bar
+vbell on
+
+# keep scrollback n lines
+defscrollback 1000
+
+# use login shell
+shell -$SHELL
+
+# use term color
+term xterm
+
+screen -t $		1
+#screen -t $		2
+#screen -t irssi	3
+#screen -t log		4
+#screen -t rtorrent  0	rtorrent	
+
+shelltitle "$ |bash"
+
+# THIS IS THE PRETTY BIT
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+
+hardstatus alwayslastline
+hardstatus string '%{=}%-w%{+b w}%n %t%{-b w}%+w %=%c'
+
+#hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+
